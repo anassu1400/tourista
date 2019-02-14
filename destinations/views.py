@@ -10,12 +10,6 @@ def destination_list(request):
     return render(request, 'list.html', context)
 
 
-def destination_detail(request, destination_id):
-    context = {
-        "destination": Destination.objects.get(id=destination_id)
-    }
-    return render(request, 'detail.html', context)
-
 
 def destination_create(request):
     form = DestinationForm()

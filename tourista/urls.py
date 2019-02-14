@@ -24,8 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('destinations/list/', views.destination_list, name='destination-list'),
-    path('destinations/detail/<int:destination_id>/',
-         views.destination_detail, name='destination-detail'),
     path('destinations/create/', views.destination_create,
          name='destination-create'),
     path('destinations/update/<int:destination_id>/',
